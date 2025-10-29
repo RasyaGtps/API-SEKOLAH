@@ -105,11 +105,11 @@ components:
         alamat: { type: string, example: "Jl. Budiman" }
         telepon: { type: string, example: "081234567890" }
         email: { type: string, format: email, example: "rasyarayhandev@gmail.com" }
-        tanggal_lahir: { type: string, format: date, example: "2006-05-15" }
+        tanggal_lahir: { type: string, format: date, example: "1945-05-15" }
         jenis_kelamin: { type: string, enum: ["Laki-laki", "Perempuan"], example: "Laki-laki" }
     SiswaInput:
       type: object
-      required: [nama, jurusan]
+      required: [nama, jurusan, absen, kelas, alamat, telepon, email, tanggal_lahir, jenis_kelamin]
       properties:
         nama: { type: string }
         jurusan: { type: string }
